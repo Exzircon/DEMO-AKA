@@ -32,6 +32,7 @@ def recvfrom_usim() -> bytes:
         data = bytes()
         
     # Normally, we should have checked 'addr'
+    # Assume we don't have to implement this :D
     return data
 
 
@@ -111,13 +112,16 @@ def run_HOME_state_machine() -> bool:
                     print("  SQN: ",b2a(SQN))
                     print("  AMF: ",b2a(AMF))       
                 
-                    #milenage = Milenage(K,OPc)
-                    #milenage.compute(RAND,SQN,AMF)
+                    #CHANGE: Replaced with relevant functions from milenage
+                    # Had to change our previous milenage implementation to take in OPc instead of OP
+                    # OPc = OP ⊕ E[OP]k
                     MACA = milenage.f1(K, RAND, SQN, AMF, OPc)
                     RES = milenage.f2(K, RAND, OPc)                    
                     CK = milenage.f3(K, RAND, OPc)
                     IK = milenage.f4(K, RAND, OPc)
                     AK = milenage.f5(K, RAND, OPc)
+
+                    #Old blank values
                     #MACA = bytes(8)
                     #RES  = bytes(8)
                     #CK   = bytes(16)
@@ -134,6 +138,8 @@ def run_HOME_state_machine() -> bool:
         #>>> SEND_CHALLENGE >>>
         if state == State.SEND_CHALLENGE:
             at(state)
+            #CHANGE: Made HOME send Masked SQN, instead of blank data
+            # MSQN is just SQN xor AK, where AK comes from milenage f5()
             MSQN = milenage.xor(SQN,AK)
             #MSQN = bytes(6)
             AUTN = MSQN+AMF+MACA

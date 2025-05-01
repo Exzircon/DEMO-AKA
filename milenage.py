@@ -11,6 +11,36 @@
 	The functions have all been tested against the KATs described in 3GPP TS 35.208
 '''
 
+
+'''
+	List of Symbols:
+	= 			The Assignment operator
+	^ / *			The bitwise exclusive-OR operation.
+	||			The concatenation of the two operands. (+ should also work)
+	E[x]k		The Result of applying a block cipher encryption to the input value x using the key k
+	rot(x,r) 	The result of cyclically rotating the 128-bit value x by r bit positions towards the most significant bit.
+	X[i]		the ith bit in the variable X.
+
+	List of Variables:
+	AK		a 48-bit anonymity key that is the output of either of f5 and f5*.
+	AMF		a 16-bit authentication managment field that is the input to f1 and f1*.
+	c1, c2, c3, c4, c5		128-bit constants, which are XORed onto intermediate variables
+	CK		a 128-bit confidentiality key that is the output of f3
+	IK		a 128-bit integrity key that is the output of f4
+	IN1		a 128-bit valye constructed from SQN and AMF that is used in the conputation of f1 and f1*
+	K		a 128-bit subscriber key that is the input to f1, f1*, f2, f3, f4, f5, and f5*
+	MAC-A	a 64-bit network authentication code that is the output of f1
+	MAC-S	a 64-bit resynchronisation authentication code that is the output of f1*
+	OP		a 128-bit Operator Variant Algorithm Configuration Field that is a component of f1, f1*, f2, f3, f4, f5 and f5*
+	OPc		a 128-bit value derived from OP and K and used within the computation of the functions
+	OUT1, OUT2, OUT3, OUT4, OUT5		128-bit computed values from which the outputs of f1, f1*, f2, f3, f4, f5 and f5* are obtained
+	r1, r2, r3, r4, r5		integers in the range 0-127 inclusive, which defines the amounts by which intermediate varables are cyclically rotated. Always divisible by 8
+	RAND	a 128-bit random challenge that is an input to f1, f1*, f2, f3, f4, f5, and f5*
+	RES		a 64-bit signed response that is the output of f2
+	SQN		a 48-bit sequence number that is an input to f1 or f1*
+	TEMP	a	128-bit value used in the computations of the functions
+'''
+
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 

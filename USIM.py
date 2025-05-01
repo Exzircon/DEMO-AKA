@@ -105,6 +105,7 @@ def run_USIM_state_machine(IMSI: bytes, K: bytes, OPc: bytes) -> bool:
                 # milenage.compute_w_masked_sqn(RAND,MSQN,AMF)
                 
                 # verify the challenge!
+                #CHANGE: Added code to unmask MSQN
                 AK = milenage.f5(K, RAND, OPc)
                 SQN = milenage.xor(AK, MSQN)
                 print(AK, MSQN, SQN)
@@ -114,10 +115,15 @@ def run_USIM_state_machine(IMSI: bytes, K: bytes, OPc: bytes) -> bool:
                     print("Too bad -- the challenge was *invalid*!!")
                     state = State.ERROR
                 else:
+                    #CHANGE: Replaced with relevant functions from milenage
+                    # Had to change our previous milenage implementation to take in OPc instead of OP
+                    # OPc = OP ⊕ E[OP]k
                     RES = milenage.f2(K, RAND, OPc)                    
                     CK = milenage.f3(K, RAND, OPc)
                     IK = milenage.f4(K, RAND, OPc)
                     AK = milenage.f5(K, RAND, OPc)
+
+                    #Old blank values
                     #RES = bytes(8)
                     #CK  = bytes(16)
                     #IK  = bytes(16)
