@@ -12,6 +12,7 @@ from enum import Enum, auto
 from demo_aka_util import *
 from demo_aka_cipher import AEAD_encrypt, AEAD_decrypt
 from conformance_test_data import TestData, b2a
+import milenage
 
 
 hsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -112,16 +113,16 @@ def run_HOME_state_machine() -> bool:
                 
                     #milenage = Milenage(K,OPc)
                     #milenage.compute(RAND,SQN,AMF)
-                    #MACA = milenage.f1()
-                    #RES = milenage.f2()                    
-                    #CK = milenage.f3()
-                    #IK = milenage.f4()
-                    #AK = milenage.f5()
-                    MACA = bytes(8)
-                    RES  = bytes(8)
-                    CK   = bytes(16)
-                    IK   = bytes(16)
-                    AK   = bytes(6)
+                    MACA = milenage.f1(K, RAND, SQN, AMF, OPc)
+                    RES = milenage.f2(K, RAND, OPc)                    
+                    CK = milenage.f3(K, RAND, OPc)
+                    IK = milenage.f4(K, RAND, OPc)
+                    AK = milenage.f5(K, RAND, OPc)
+                    #MACA = bytes(8)
+                    #RES  = bytes(8)
+                    #CK   = bytes(16)
+                    #IK   = bytes(16)
+                    #AK   = bytes(6)
                     print_computed_values(MACA,RES,CK,IK,AK)                                                          
                     state = State.SEND_CHALLENGE                      
                 else:
@@ -133,8 +134,8 @@ def run_HOME_state_machine() -> bool:
         #>>> SEND_CHALLENGE >>>
         if state == State.SEND_CHALLENGE:
             at(state)
-            #MSQN = xor(SQN,AK)
-            MSQN = bytes(6)
+            MSQN = milenage.xor(SQN,AK)
+            #MSQN = bytes(6)
             AUTN = MSQN+AMF+MACA
             msg = MSG_CHALLENGE + RAND + AUTN
             print_challenge_data("Sending 'Challenge'",RAND,AUTN,MSQN,AMF,MACA)   

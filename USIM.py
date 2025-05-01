@@ -12,6 +12,7 @@ from enum import Enum, auto
 from demo_aka_util import *
 from demo_aka_cipher import AEAD_encrypt, AEAD_decrypt
 from conformance_test_data import TestData, b2a
+import milenage
 
 
 hsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -59,6 +60,7 @@ class State(Enum):
     DONE = auto()
 
 
+#MARK: This one needs FIXING
 def run_USIM_state_machine(IMSI: bytes, K: bytes, OPc: bytes) -> bool:
     """The glorious USIM state machine."""
     was_success = False
@@ -89,6 +91,7 @@ def run_USIM_state_machine(IMSI: bytes, K: bytes, OPc: bytes) -> bool:
         elif state == State.WAIT_FOR_CHALLENGE:
             at(state)
             data = recvfrom_home()
+            print("DATA: ", data)
             check = verify_Challenge_syntax(data)
             if check[0]:
                 RAND = data[4:20]
@@ -102,20 +105,23 @@ def run_USIM_state_machine(IMSI: bytes, K: bytes, OPc: bytes) -> bool:
                 # milenage.compute_w_masked_sqn(RAND,MSQN,AMF)
                 
                 # verify the challenge!
-                #uMACA = milenage.f1()
-                uMACA = bytes(8)
+                AK = milenage.f5(K, RAND, OPc)
+                SQN = milenage.xor(AK, MSQN)
+                print(AK, MSQN, SQN)
+                uMACA = milenage.f1(K, RAND, SQN, AMF, OPc)
+                #uMACA = bytes(8)
                 if  MACA != uMACA:
                     print("Too bad -- the challenge was *invalid*!!")
                     state = State.ERROR
                 else:
-                    #RES = milenage.f2()                    
-                    #CK = milenage.f3()
-                    #IK = milenage.f4()
-                    #AK = milenage.f5()
-                    RES = bytes(8)
-                    CK  = bytes(16)
-                    IK  = bytes(16)
-                    AK  = bytes(6)
+                    RES = milenage.f2(K, RAND, OPc)                    
+                    CK = milenage.f3(K, RAND, OPc)
+                    IK = milenage.f4(K, RAND, OPc)
+                    AK = milenage.f5(K, RAND, OPc)
+                    #RES = bytes(8)
+                    #CK  = bytes(16)
+                    #IK  = bytes(16)
+                    #AK  = bytes(6)
                     print_computed_values(MACA,RES,CK,IK,AK)          
                       
                 state = State.SEND_RESPONSE         
