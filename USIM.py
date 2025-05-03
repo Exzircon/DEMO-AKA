@@ -1,5 +1,7 @@
 """
 USIM side of DEMO-AKA: state-machine only (w/message syntax check).
+Authors: Mikael Fossli, Daniel Hao Huynh, Cristoffer Simonsen
+
 
 That is, we have also included:
     - the basic AESGCM encryption/decryption.

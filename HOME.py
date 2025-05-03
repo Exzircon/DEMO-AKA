@@ -1,5 +1,6 @@
 """
 HOME side of DEMO-AKA
+Authors: Mikael Fossli, Daniel Hao Huynh, Cristoffer Simonsen
 
 That is, we have also included:
     - the basic AESGCM encryption/decryption.

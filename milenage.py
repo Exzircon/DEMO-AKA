@@ -1,5 +1,5 @@
 '''
-	Author: Group \x01
+	Authors: Mikael Fossli, Daniel Hao Huynh, Cristoffer Simonsen
 	---
 	This file contains the f1 -> f5 functions for MILENAGE and some helper functions
 	to eliminate some duplicate code and improve readability. This file does not include
