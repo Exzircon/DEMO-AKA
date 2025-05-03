@@ -1,0 +1,1023 @@
+  decr.TMSI : 00000002 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : f769bcd7 51044604 12767271 1c6d3441 b40ba9a3 c58b2a05 bbf0d987 b21bf8cb 
+  nonce     : 70ef8c73 c13d5551 a4643a97 28c89284
+  ciphertext: e76a3a19 b4054664 45f8ddd5 6a0ea23f d3fb79fe 
+  aad was   : 00000000 00000000 00000000 00000002
+  decr.TMSI : 00000002 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000003
+
+  Retrieved associated data:
+  K:    fec86ba6 eb707ed0 8905757b 1bb44b8f
+  OPc:  1006020f 0a478bf6 b699f15c 062e42b3
+  RAND: 9f7c8d02 1accf4db 213ccff0 c7f71a6a
+  SQN:  9d027759 5ffc
+  AMF:  725c
+
+Computed values:
+  MAC-A : 9cabc3e9 9baf7281 
+  RES   : 8011c48c 0c214ed2 
+  CK    : 5dbdbb29 54e8f3cd e665b046 179a5098
+  IK    : 59a92d3b 476a0443 487055cf 88b2307b
+  AK    : 33484dc2 136b
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 9f7c8d02 1accf4db 213ccff0 c7f71a6a
+  AUTN: ae4a3a9b 4c97725c 9cabc3e9 9baf7281
+    MSQN: ae4a3a9b 4c97
+    AMF : 725c
+    MACA: 9cabc3e9 9baf7281 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 8011c48c 0c214ed2 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 5dbdbb29 54e8f3cd e665b046 179a5098 59a92d3b 476a0443 487055cf 88b2307b 
+  nonce     : f3c30391 a8fa229d 56a7e34e ddd276e1
+  ciphertext: 28faae13 a976e3a3 bb58afac 5ad48c1d 7a7252b0 
+  aad was   : 00000000 00000000 00000000 00000003
+  decr.TMSI : 00000003 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 59a92d3b 476a0443 487055cf 88b2307b 5dbdbb29 54e8f3cd e665b046 179a5098 
+  nonce     : b4cd12d3 44357813 6a9274aa cf13338d
+  ciphertext: 9077c73b 10ea120b 83776f34 adaa7db9 c9d10542 
+  aad was   : 00000000 00000000 00000000 00000003
+  decr.TMSI : 00000003 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000004
+
+  Retrieved associated data:
+  K:    9e5944ae a94b8116 5c82fbf9 f32db751
+  OPc:  a64a507a e1a2a98b b88eb421 0135dc87
+  RAND: ce83dbc5 4ac0274a 157c17f8 0d017bd6
+  SQN:  0b604a81 eca8
+  AMF:  9e09
+
+Computed values:
+  MAC-A : 74a58220 cba84c49 
+  RES   : f365cd68 3cd92e96 
+  CK    : e203edb3 971574f5 a94b0d61 b816345d
+  IK    : 0c4524ad eac041c4 dd830d20 854fc46b
+  AK    : f0b9c08a d02e
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: ce83dbc5 4ac0274a 157c17f8 0d017bd6
+  AUTN: fbd98a0b 3c869e09 74a58220 cba84c49
+    MSQN: fbd98a0b 3c86
+    AMF : 9e09
+    MACA: 74a58220 cba84c49 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: f365cd68 3cd92e96 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : e203edb3 971574f5 a94b0d61 b816345d 0c4524ad eac041c4 dd830d20 854fc46b 
+  nonce     : 43181ed7 ccd44f26 10bfe564 00db7235
+  ciphertext: 61ef12a8 159e2a13 565b62b8 e527d842 3bb17f79 
+  aad was   : 00000000 00000000 00000000 00000004
+  decr.TMSI : 00000004 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 0c4524ad eac041c4 dd830d20 854fc46b e203edb3 971574f5 a94b0d61 b816345d 
+  nonce     : 13a45ef0 50615149 04e0482f 9e11b3fd
+  ciphertext: 231fbcac 267cb68c 252b4f96 be34ac95 af733969 
+  aad was   : 00000000 00000000 00000000 00000004
+  decr.TMSI : 00000004 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000005
+
+  Retrieved associated data:
+  K:    4ab1deb0 5ca6ceb0 51fc98e7 7d026a84
+  OPc:  dcf07cbd 51855290 b92a07a9 891e523e
+  RAND: 74b0cd60 31a1c833 9b2b6ce2 b8c4a186
+  SQN:  e880a1b5 80b6
+  AMF:  9f07
+
+Computed values:
+  MAC-A : 49e785dd 12626ef2 
+  RES   : 5860fc1b ce351e7e 
+  CK    : 7657766b 373d1c21 38f307e3 de9242f9
+  IK    : 1c42e960 d89b8fa9 9f2744e0 708ccb53
+  AK    : 31e11a60 9118
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 74b0cd60 31a1c833 9b2b6ce2 b8c4a186
+  AUTN: d961bbd5 11ae9f07 49e785dd 12626ef2
+    MSQN: d961bbd5 11ae
+    AMF : 9f07
+    MACA: 49e785dd 12626ef2 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 5860fc1b ce351e7e 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 7657766b 373d1c21 38f307e3 de9242f9 1c42e960 d89b8fa9 9f2744e0 708ccb53 
+  nonce     : cdb1d416 34d8744b 1d0c0b22 c0545f3c
+  ciphertext: 6baeeca1 1cf41838 2ebdbf71 609d5cc2 301dce53 
+  aad was   : 00000000 00000000 00000000 00000005
+  decr.TMSI : 00000005 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 1c42e960 d89b8fa9 9f2744e0 708ccb53 7657766b 373d1c21 38f307e3 de9242f9 
+  nonce     : 271acb16 5014f28f 1ca002c1 45e2c762
+  ciphertext: e8d3d450 15603e5b c653f83d f884ebbb 85fa649a 
+  aad was   : 00000000 00000000 00000000 00000005
+  decr.TMSI : 00000005 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000006
+
+  Retrieved associated data:
+  K:    6c38a116 ac280c45 4f59332e e35c8c4f
+  OPc:  3803ef53 63b947c6 aaa225e5 8fae3934
+  RAND: ee6466bc 96202c5a 557abbef f8babf63
+  SQN:  414b9822 2181
+  AMF:  4464
+
+Computed values:
+  MAC-A : 078adfb4 88241a57 
+  RES   : 16c8233f 05a0ac28 
+  CK    : 3f8c7587 fe8e4b23 3af676ae de30ba3b
+  IK    : a7466cc1 e6b2a133 7d49d3b6 6e95d7b4
+  AK    : 45b0f69a b06c
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: ee6466bc 96202c5a 557abbef f8babf63
+  AUTN: 04fb6eb8 91ed4464 078adfb4 88241a57
+    MSQN: 04fb6eb8 91ed
+    AMF : 4464
+    MACA: 078adfb4 88241a57 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 16c8233f 05a0ac28 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 3f8c7587 fe8e4b23 3af676ae de30ba3b a7466cc1 e6b2a133 7d49d3b6 6e95d7b4 
+  nonce     : 64df563a f74ac95b 0b3730dd c8709e2f
+  ciphertext: e9c85dde ca9f9062 eadfcd7d 1127a03f 0b7d7367 
+  aad was   : 00000000 00000000 00000000 00000006
+  decr.TMSI : 00000006 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : a7466cc1 e6b2a133 7d49d3b6 6e95d7b4 3f8c7587 fe8e4b23 3af676ae de30ba3b 
+  nonce     : 3f5fe938 dac634d8 04761829 66b2fe6c
+  ciphertext: 42316f5d fdb8e6f5 c04e7694 97f1f46c 1dda4f50 
+  aad was   : 00000000 00000000 00000000 00000006
+  decr.TMSI : 00000006 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000007
+
+  Retrieved associated data:
+  K:    2d609d4d b0ac5bf0 d2c0de26 7014de0d
+  OPc:  c35a0ab0 bcbfc925 2caff15f 24efbde0
+  RAND: 194aa756 013896b7 4b4a2a3b 0af4539e
+  SQN:  6bf69438 c2e4
+  AMF:  5f67
+
+Computed values:
+  MAC-A : bd07d300 3b9e5cc3 
+  RES   : 8c25a16c d918a1df 
+  CK    : 4cd08460 20f8fa07 31dd47cb dc6be411
+  IK    : 88ab80a4 15f15c73 711254a1 d388f696
+  AK    : 7e6455f3 4cf3
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 194aa756 013896b7 4b4a2a3b 0af4539e
+  AUTN: 1592c1cb 8e175f67 bd07d300 3b9e5cc3
+    MSQN: 1592c1cb 8e17
+    AMF : 5f67
+    MACA: bd07d300 3b9e5cc3 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 8c25a16c d918a1df 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 4cd08460 20f8fa07 31dd47cb dc6be411 88ab80a4 15f15c73 711254a1 d388f696 
+  nonce     : 9530e877 57111a72 495dd9c4 05f06874
+  ciphertext: 3ac7dcea ca7fc2c8 d0095b7b 3c5921f9 dd21bfc0 
+  aad was   : 00000000 00000000 00000000 00000007
+  decr.TMSI : 00000007 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 88ab80a4 15f15c73 711254a1 d388f696 4cd08460 20f8fa07 31dd47cb dc6be411 
+  nonce     : 7361af00 e9ebbd9e c6871a14 c4b7c2b6
+  ciphertext: 0aec1414 fe2b6853 d75723d0 8dcc07da 205f47ec 
+  aad was   : 00000000 00000000 00000000 00000007
+  decr.TMSI : 00000007 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000008
+
+  Retrieved associated data:
+  K:    a530a7fe 428fad10 82c45edd fce13884
+  OPc:  27953e49 bc8af6dc c6e730eb 80286be3
+  RAND: 3a4c2b32 45c50eb5 c71d0863 9395764d
+  SQN:  f63f5d76 8784
+  AMF:  b90e
+
+Computed values:
+  MAC-A : 53761fbd 679b0bad 
+  RES   : a63241e1 ffc3e5ab 
+  CK    : 10f05bab 75a99a5f bb98a9c2 87679c3b
+  IK    : f9ec0865 eb32f223 69cade40 c59c3a44
+  AK    : 88196c47 986f
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 3a4c2b32 45c50eb5 c71d0863 9395764d
+  AUTN: 7e263131 1febb90e 53761fbd 679b0bad
+    MSQN: 7e263131 1feb
+    AMF : b90e
+    MACA: 53761fbd 679b0bad 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: a63241e1 ffc3e5ab 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 10f05bab 75a99a5f bb98a9c2 87679c3b f9ec0865 eb32f223 69cade40 c59c3a44 
+  nonce     : 68e030d4 af6e1d93 1956bdeb a6b09eb8
+  ciphertext: 9ee3b251 bb177351 b505c7fe c83e094a 31fe1c77 
+  aad was   : 00000000 00000000 00000000 00000008
+  decr.TMSI : 00000008 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : f9ec0865 eb32f223 69cade40 c59c3a44 10f05bab 75a99a5f bb98a9c2 87679c3b 
+  nonce     : 09f6e159 9ff017ff e51b2673 0a2855f1
+  ciphertext: 75720035 c30b143b 09b41ce4 90dafb80 34b9806d 
+  aad was   : 00000000 00000000 00000000 00000008
+  decr.TMSI : 00000008 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000009
+
+  Retrieved associated data:
+  K:    d9151cf0 4896e258 30bf2e08 267b8360
+  OPc:  c4c93eff e8a08138 c203d4c2 7ce4e3d9
+  RAND: f761e5e9 3d603feb 730e2755 6cb8a2ca
+  SQN:  47ee0199 820a
+  AMF:  9113
+
+Computed values:
+  MAC-A : 66cc4be4 4862af1f 
+  RES   : 4a90b217 1ac83a76 
+  CK    : 71236b71 29f9b22a b77ea7a5 4c96da22
+  IK    : 90527eba a5588968 db417273 25a04d9e
+  AK    : 82a0f528 7a71
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: f761e5e9 3d603feb 730e2755 6cb8a2ca
+  AUTN: c54ef4b1 f87b9113 66cc4be4 4862af1f
+    MSQN: c54ef4b1 f87b
+    AMF : 9113
+    MACA: 66cc4be4 4862af1f 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 4a90b217 1ac83a76 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 71236b71 29f9b22a b77ea7a5 4c96da22 90527eba a5588968 db417273 25a04d9e 
+  nonce     : 52b33bcc c5b6b577 2a966ee8 0ae30d38
+  ciphertext: 82b61e8e 828d2073 ae520244 cf48a169 7c7414a3 
+  aad was   : 00000000 00000000 00000000 00000009
+  decr.TMSI : 00000009 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 90527eba a5588968 db417273 25a04d9e 71236b71 29f9b22a b77ea7a5 4c96da22 
+  nonce     : d40b0fb9 df2b6f5e 7ce34ca5 51c9b61e
+  ciphertext: a2e58cd3 65190ee2 d1b72c02 15cdfca8 8afd15d4 
+  aad was   : 00000000 00000000 00000000 00000009
+  decr.TMSI : 00000009 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 0000000a
+
+  Retrieved associated data:
+  K:    a0e2971b 6822e8d3 54a18cc2 35624ecb
+  OPc:  82a26f22 bba9e948 8f949a10 d98e9cc4
+  RAND: 08eff828 b13fdb56 2722c65c 7f30a9b2
+  SQN:  db5c0664 81e0
+  AMF:  716b
+
+Computed values:
+  MAC-A : 9485fe24 621cb9f6 
+  RES   : 4bc2212d 8624910a 
+  CK    : 08cef6d0 04ec6147 1a3c3cda 048137fa
+  IK    : ed0318ca 5deb9206 272f6e8f a64ba411
+  AK    : a2f858aa 9e5d
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 08eff828 b13fdb56 2722c65c 7f30a9b2
+  AUTN: 79a45ece 1fbd716b 9485fe24 621cb9f6
+    MSQN: 79a45ece 1fbd
+    AMF : 716b
+    MACA: 9485fe24 621cb9f6 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 4bc2212d 8624910a 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 08cef6d0 04ec6147 1a3c3cda 048137fa ed0318ca 5deb9206 272f6e8f a64ba411 
+  nonce     : f543b57f 21db9c68 71a6b560 d26fc5c1
+  ciphertext: 5640f694 329dd021 41055ded 3d59c02b 300f1c42 
+  aad was   : 00000000 00000000 00000000 0000000a
+  decr.TMSI : 0000000a 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : ed0318ca 5deb9206 272f6e8f a64ba411 08cef6d0 04ec6147 1a3c3cda 048137fa 
+  nonce     : 8c42c262 4ebfc9de bca7fd71 8a87748e
+  ciphertext: 7fc24768 8b2276c9 76e1e269 1a73cf3e 52aa512b 
+  aad was   : 00000000 00000000 00000000 0000000a
+  decr.TMSI : 0000000a 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 0000000b
+
+  Retrieved associated data:
+  K:    0da6f7ba 86d5eac8 a19cf563 ac58642d
+  OPc:  0db1071f 8767562c a43a0a64 c41e8d08
+  RAND: 679ac4db acd7d233 ff9d6806 f4149ce3
+  SQN:  6e2331d6 92ad
+  AMF:  224a
+
+Computed values:
+  MAC-A : 2831d7ae 9088e492 
+  RES   : 6fc30fee 6d123523 
+  CK    : 69b1cae7 c7429d97 5e245cac b05a517c
+  IK    : 74f24e8c 26df58e1 b38d7dcd 4f1b7fbd
+  AK    : 4c539a26 e1fa
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 679ac4db acd7d233 ff9d6806 f4149ce3
+  AUTN: 2270abf0 7357224a 2831d7ae 9088e492
+    MSQN: 2270abf0 7357
+    AMF : 224a
+    MACA: 2831d7ae 9088e492 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 6fc30fee 6d123523 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 69b1cae7 c7429d97 5e245cac b05a517c 74f24e8c 26df58e1 b38d7dcd 4f1b7fbd 
+  nonce     : 822dab3e ed5d37a9 6a181aa2 3e85f11b
+  ciphertext: ee86c3e7 15e676be ebdbb4c0 64d23c63 415bc022 
+  aad was   : 00000000 00000000 00000000 0000000b
+  decr.TMSI : 0000000b 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 74f24e8c 26df58e1 b38d7dcd 4f1b7fbd 69b1cae7 c7429d97 5e245cac b05a517c 
+  nonce     : 6396e833 d62bb6e8 ca619d97 db5d7deb
+  ciphertext: e2bf1785 b6cf7124 9f0ddd3d 2371759c e283c663 
+  aad was   : 00000000 00000000 00000000 0000000b
+  decr.TMSI : 0000000b 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 0000000c
+
+  Retrieved associated data:
+  K:    77b45843 c88e58c1 0d202684 515ed430
+  OPc:  d483afae 562409a3 26b5bb0b 20c4d762
+  RAND: 4c47eb30 76dc55fe 5106cb20 34b8cd78
+  SQN:  fe1a8731 005d
+  AMF:  ad25
+
+Computed values:
+  MAC-A : 08332d7e 9f484570 
+  RES   : aefa357b eac2a87a 
+  CK    : 908c43f0 569cb8f7 4bc971e7 06c36c5f
+  IK    : c251df0d 888dd932 9bcf4665 5b226e40
+  AK    : 30ff25cd adf6
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 4c47eb30 76dc55fe 5106cb20 34b8cd78
+  AUTN: cee5a2fc adabad25 08332d7e 9f484570
+    MSQN: cee5a2fc adab
+    AMF : ad25
+    MACA: 08332d7e 9f484570 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: aefa357b eac2a87a 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 908c43f0 569cb8f7 4bc971e7 06c36c5f c251df0d 888dd932 9bcf4665 5b226e40 
+  nonce     : 6feda6b6 359a3af5 b534dafe a52720c2
+  ciphertext: 03e54dbc c27d9bb5 dde388a1 fbf8b3ad 53839c98 
+  aad was   : 00000000 00000000 00000000 0000000c
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 0000000d
+
+  Retrieved associated data:
+  K:    729b1772 9270dd87 ccdf1bfe 29b4e9bb
+  OPc:  228c2f2f 06ac3268 a9e616ee 16db4ba1
+  RAND: 311c4c92 9744d675 b720f3b7 e9b1cbd0
+  SQN:  c85c4cf6 5916
+  AMF:  5bb2
+
+Computed values:
+  MAC-A : ff794fe2 f827ebf8 
+  RES   : 98dbbd09 9b3b408d 
+  CK    : 44c0f23c 5493cfd2 41e48f19 7e1d1012
+  IK    : 0c9fb816 13884c25 35dd0eab f3b440d8
+  AK    : 5380d158 cfe3
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 311c4c92 9744d675 b720f3b7 e9b1cbd0
+  AUTN: 9bdc9dae 96f55bb2 ff794fe2 f827ebf8
+    MSQN: 9bdc9dae 96f5
+    AMF : 5bb2
+    MACA: ff794fe2 f827ebf8 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 98dbbd09 9b3b408d 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 44c0f23c 5493cfd2 41e48f19 7e1d1012 0c9fb816 13884c25 35dd0eab f3b440d8 
+  nonce     : 203bd8c9 abd6e9a0 39ada705 25a80841
+  ciphertext: 0059cf06 ead7d8ee c46eccbb dc010704 0468dbe1 
+  aad was   : 00000000 00000000 00000000 0000000d
+  decr.TMSI : 0000000d 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 0c9fb816 13884c25 35dd0eab f3b440d8 44c0f23c 5493cfd2 41e48f19 7e1d1012 
+  nonce     : 724b8334 6e350d12 9bf7dcec 381f6bfd
+  ciphertext: 43afab8d 177cf96e f3689151 0490bcaa 6026505b 
+  aad was   : 00000000 00000000 00000000 0000000d
+  decr.TMSI : 0000000d 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 0000000e
+
+  Retrieved associated data:
+  K:    d32dd23e 89dc6623 54ca12eb 79dd32fa
+  OPc:  d22a4b41 80a53257 08a5ff70 d9f67ec7
+  RAND: cf7d0ab1 d9430695 0bf12018 fbd46887
+  SQN:  484107e5 6a43
+  AMF:  b5e6
+
+Computed values:
+  MAC-A : cf19d62b 6a809866 
+  RES   : af4a411e 1139f2c2 
+  CK    : 5af86b80 edb70df5 292cc112 1cbad50c
+  IK    : 7f4d6ae7 440e1878 9a8b75ad 3f42f03a
+  AK    : 217af492 72ad
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: cf7d0ab1 d9430695 0bf12018 fbd46887
+  AUTN: 693bf377 18eeb5e6 cf19d62b 6a809866
+    MSQN: 693bf377 18ee
+    AMF : b5e6
+    MACA: cf19d62b 6a809866 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: af4a411e 1139f2c2 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 5af86b80 edb70df5 292cc112 1cbad50c 7f4d6ae7 440e1878 9a8b75ad 3f42f03a 
+  nonce     : 07563f62 adbbc9bd 8f313cc4 23118207
+  ciphertext: 3ea8f884 27d2a1ce 56ea1cda 8ed67344 aa949ac4 
+  aad was   : 00000000 00000000 00000000 0000000e
+  decr.TMSI : 0000000e 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 7f4d6ae7 440e1878 9a8b75ad 3f42f03a 5af86b80 edb70df5 292cc112 1cbad50c 
+  nonce     : 61237acc 9100c109 9af4a6df b2ee71e8
+  ciphertext: 2bb8e0d2 3e9d6b9d fa495f20 dddc7f32 e3eb3b30 
+  aad was   : 00000000 00000000 00000000 0000000e
+  decr.TMSI : 0000000e 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 0000000f
+
+  Retrieved associated data:
+  K:    af7c65e1 927221de 591187a2 c5987a53
+  OPc:  a4cf5c81 55c08a7e ff418e54 43b98e55
+  RAND: 1f0f8578 464fd59b 64bed2d0 9436b57a
+  SQN:  3d627b01 418d
+  AMF:  84f6
+
+Computed values:
+  MAC-A : c37cae78 05642032 
+  RES   : 7bffa5c2 f41fbc05 
+  CK    : 3f8c3f3c cf7625bf 77fc94bc fd22fd26
+  IK    : abcbae8f d46115e9 961a55d0 da5f2078
+  AK    : 837fd7b7 4419
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 1f0f8578 464fd59b 64bed2d0 9436b57a
+  AUTN: be1dacb6 059484f6 c37cae78 05642032
+    MSQN: be1dacb6 0594
+    AMF : 84f6
+    MACA: c37cae78 05642032 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 7bffa5c2 f41fbc05 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 3f8c3f3c cf7625bf 77fc94bc fd22fd26 abcbae8f d46115e9 961a55d0 da5f2078 
+  nonce     : dcbcc4b7 15541e15 fd1182f6 c2272377
+  ciphertext: b1b720b6 3b6dd312 1a75f798 63610fb2 0263d382 
+  aad was   : 00000000 00000000 00000000 0000000f
+  decr.TMSI : 0000000f 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : abcbae8f d46115e9 961a55d0 da5f2078 3f8c3f3c cf7625bf 77fc94bc fd22fd26 
+  nonce     : 162190d5 895b61ee 770b49e0 57194ced
+  ciphertext: e71b4bc7 83a0fb4a 7b03a91b 714b417d 94c19b76 
+  aad was   : 00000000 00000000 00000000 0000000f
+  decr.TMSI : 0000000f 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000010
+
+  Retrieved associated data:
+  K:    5bd7ecd3 d3127a41 d12539be d4e7cf71
+  OPc:  76089d3c 0ff3efdc 6e36721d 4fceb747
+  RAND: 59b75f14 251c7503 1d0bcbac 1c2c04c7
+  SQN:  a298ae89 29dc
+  AMF:  d056
+
+Computed values:
+  MAC-A : c3f25cd9 4309107e 
+  RES   : 7e3f44c7 591f6f45 
+  CK    : d42b2d61 5e49a03a c275a5ae f97af892
+  IK    : 0b3f8d02 4fe6bfaf aa982b8f 82e319c2
+  AK    : 5be11495 525d
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 59b75f14 251c7503 1d0bcbac 1c2c04c7
+  AUTN: f979ba1c 7b81d056 c3f25cd9 4309107e
+    MSQN: f979ba1c 7b81
+    AMF : d056
+    MACA: c3f25cd9 4309107e 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 7e3f44c7 591f6f45 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : d42b2d61 5e49a03a c275a5ae f97af892 0b3f8d02 4fe6bfaf aa982b8f 82e319c2 
+  nonce     : 808617f0 e529d3ae aff11237 29aa2a68
+  ciphertext: 262aa9e1 016facfd bcd82797 714f40c5 bf872a9b 
+  aad was   : 00000000 00000000 00000000 00000010
+  decr.TMSI : 00000010 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 0b3f8d02 4fe6bfaf aa982b8f 82e319c2 d42b2d61 5e49a03a c275a5ae f97af892 
+  nonce     : 1712b5d4 32fc070e a812e6b2 f6f0d640
+  ciphertext: 57cae285 59c63bbe 8131dc42 43f06840 cac424b7 
+  aad was   : 00000000 00000000 00000000 00000010
+  decr.TMSI : 00000010 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000011
+
+  Retrieved associated data:
+  K:    6cd1c6ce b1e01e14 f1b82316 a90b7f3d
+  OPc:  a219dc37 f1dc7d66 738b5843 c799f206
+  RAND: f69b78f3 00a0568b ce9f0cb9 3c4be4c9
+  SQN:  b4fce5fe b059
+  AMF:  e4bb
+
+Computed values:
+  MAC-A : 69a90869 c268cb7b 
+  RES   : 70f6bdb9 ad21525f 
+  CK    : 6edaf99e 5bd9f85d 5f36d91c 1272fb4b
+  IK    : d61c853c 280dd9c4 6f297bae c386de17
+  AK    : 1c408a85 8b3e
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: f69b78f3 00a0568b ce9f0cb9 3c4be4c9
+  AUTN: a8bc6f7b 3b67e4bb 69a90869 c268cb7b
+    MSQN: a8bc6f7b 3b67
+    AMF : e4bb
+    MACA: 69a90869 c268cb7b 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 70f6bdb9 ad21525f 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 6edaf99e 5bd9f85d 5f36d91c 1272fb4b d61c853c 280dd9c4 6f297bae c386de17 
+  nonce     : df681b9c eef4cbe0 6999bb57 5388b419
+  ciphertext: 45e8d887 303efa53 cb1cfde2 02517ce5 1daaea2c 
+  aad was   : 00000000 00000000 00000000 00000011
+  decr.TMSI : 00000011 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : d61c853c 280dd9c4 6f297bae c386de17 6edaf99e 5bd9f85d 5f36d91c 1272fb4b 
+  nonce     : 93edf957 aef7cbbf 2f0f69e0 9cb3e7d2
+  ciphertext: b1e62d1a 8e80ab39 78e76dd9 79f6759c 1fa5ef97 
+  aad was   : 00000000 00000000 00000000 00000011
+  decr.TMSI : 00000011 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000012
+
+  Retrieved associated data:
+  K:    b73a90cb cf3afb62 2dba83c5 8a8415df
+  OPc:  df0c6786 8fa25f74 8b7044c6 e7c245b8
+  RAND: b120f1c1 a0102a2f 507dd543 de68281f
+  SQN:  f1e8a523 a36d
+  AMF:  471b
+
+Computed values:
+  MAC-A : ebd70341 bcd415b0 
+  RES   : 479dd25c 20792d63 
+  CK    : 66195dbe d0313274 c5ca7766 615fa25e
+  IK    : 66bec707 eb2afc47 6d7408a8 f2927b36
+  AK    : aefdaa5d dd99
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: b120f1c1 a0102a2f 507dd543 de68281f
+  AUTN: 5f150f7e 7ef4471b ebd70341 bcd415b0
+    MSQN: 5f150f7e 7ef4
+    AMF : 471b
+    MACA: ebd70341 bcd415b0 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 479dd25c 20792d63 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 66195dbe d0313274 c5ca7766 615fa25e 66bec707 eb2afc47 6d7408a8 f2927b36 
+  nonce     : 7cbc2cce 24d9a4f3 6c36a9f0 e8901da3
+  ciphertext: f5cee757 00c1b05a e99feb2e 5067f768 d7c63bc2 
+  aad was   : 00000000 00000000 00000000 00000012
+  decr.TMSI : 00000012 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 66bec707 eb2afc47 6d7408a8 f2927b36 66195dbe d0313274 c5ca7766 615fa25e 
+  nonce     : ae8a18a0 59205127 4a87086f ad93b8a9
+  ciphertext: 759739cf 2753d636 194be2bf 3dc97eac d9ff56b8 
+  aad was   : 00000000 00000000 00000000 00000012
+  decr.TMSI : 00000012 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000013
+
+  Retrieved associated data:
+  K:    51222502 14c33e72 3a5dd523 fc145fc0
+  OPc:  981d464c 7c52eb6e 50362349 84ad0bcf
+  RAND: 81e92b6c 0ee0e12e bceba8d9 2a99dfa5
+  SQN:  16f3b3f7 0fc2
+  AMF:  c3ab
+
+Computed values:
+  MAC-A : 2a5c23d1 5ee351d5 
+  RES   : 28d7b0f2 a2ec3de5 
+  CK    : 5349fbe0 98649f94 8f5d2e97 3a81c00f
+  IK    : 9744871a d32bf9bb d1dd5ce5 4e3e2e5a
+  AK    : ada15aeb 7bb8
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 81e92b6c 0ee0e12e bceba8d9 2a99dfa5
+  AUTN: bb52e91c 747ac3ab 2a5c23d1 5ee351d5
+    MSQN: bb52e91c 747a
+    AMF : c3ab
+    MACA: 2a5c23d1 5ee351d5 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: 28d7b0f2 a2ec3de5 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : 5349fbe0 98649f94 8f5d2e97 3a81c00f 9744871a d32bf9bb d1dd5ce5 4e3e2e5a 
+  nonce     : 9d3e87b3 77fdbfcf b27e0a72 f2ed6802
+  ciphertext: dd1b16c3 0803dfe5 be508ba8 db81edc0 4b86daad 
+  aad was   : 00000000 00000000 00000000 00000013
+  decr.TMSI : 00000013 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : 9744871a d32bf9bb d1dd5ce5 4e3e2e5a 5349fbe0 98649f94 8f5d2e97 3a81c00f 
+  nonce     : fef9fe7c a379a9f0 9d179db8 3eadad6d
+  ciphertext: 801e3b1c eb2dc6b9 0f249ce0 1aaf0ef7 dc32a4a1 
+  aad was   : 00000000 00000000 00000000 00000013
+  decr.TMSI : 00000013 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+Received 'SendIdentity':
+  IMSI: 00000000 00000000 00000000 00000014
+
+  Retrieved associated data:
+  K:    90dca4ed a45b53cf 0f12d7c9 c3bc6a89
+  OPc:  cb9cccc4 b9258e6d ca476037 9fb82581
+  RAND: 9fddc720 92c6ad03 6b6e4647 89315b78
+  SQN:  20f813bd 4141
+  AMF:  61df
+
+Computed values:
+  MAC-A : 09db94ea b4f8149e 
+  RES   : a95100e2 760952cd 
+  CK    : b5f2da03 883b69f9 6bf52e02 9ed9ac45
+  IK    : b4721368 bc16ea67 875c5598 688bb0ef
+  AK    : 83cfd54d b913
+
+==> State: SEND_CHALLENGE
+Sending 'Challenge'
+  RAND: 9fddc720 92c6ad03 6b6e4647 89315b78
+  AUTN: a337c6f0 f85261df 09db94ea b4f8149e
+    MSQN: a337c6f0 f852
+    AMF : 61df
+    MACA: 09db94ea b4f8149e 
+
+==> State: WAIT_FOR_RES
+Received 'Response':
+RES: a95100e2 760952cd 
+The response was valid :-)
+
+==> State: SEND_ASSIGN_TMSI
+Sending 'AssignTMSI':
+  Key       : b5f2da03 883b69f9 6bf52e02 9ed9ac45 b4721368 bc16ea67 875c5598 688bb0ef 
+  nonce     : 3834a37e 2d46dde6 9b5aa2f0 13c7ae5a
+  ciphertext: 679e6bad 963c72cc 9ad86906 e81e4e51 7fa3e4df 
+  aad was   : 00000000 00000000 00000000 00000014
+  decr.TMSI : 00000014 
+
+==> State: WAIT_FOR_TMSI_ACK
+Received 'AssignTMSI-ack':
+  Key       : b4721368 bc16ea67 875c5598 688bb0ef b5f2da03 883b69f9 6bf52e02 9ed9ac45 
+  nonce     : 5adfa8f8 94f41c0d 9c6e8713 86d9d032
+  ciphertext: db715912 53ba4332 c0fde117 0529edd0 ea92cff0 
+  aad was   : 00000000 00000000 00000000 00000014
+  decr.TMSI : 00000014 
+
+==> State: DONE
+
+DEMO-AKA sequence successfully completed on HOME side!
+
+==========<<<  New DEMO-AKA run  >>>==================================================
+
+==> State: INIT
+HOME starts by waiting for SendIdentity.
+
+==> State: WAIT_FOR_ID
+
+TERMINATE message received. Goodbye.
+
+HOME done.
+(.venv) mikael@pop-os:~/Documents/Programming/DEMOAKA/DEMO-AKA$ 
